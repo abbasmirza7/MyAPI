@@ -12,13 +12,12 @@ app.get("/", (req, res) => {
 app.get('/democall.json', (req, res) => {
   console.log(req.query.name)
   res.json({
-    "success": {
-      "total": 1
+    "Success": {
+      "Total": 1
     },
-    "contents": {
-      "welcome": "You are",
-      "name": req.query.name || "name missing",
-      "result": "yes"
+    "Contents": {
+      "Your Name": req.query.name || "Name Missing",
+      "Result": "Server Call Successful"
     }
   })
 });
